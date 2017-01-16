@@ -17,7 +17,7 @@ sudo scp <location_of_opkg> root@<kankun_ip_address>:/tmp/
   Note 1: `scp` was used since `rsync` is unavailable on the target system.
 
   Note 2: At this point I should mention that `df` can be used to query the available system storage. By locating temporary files in `/tmp` we wont eat at the main root filesystem where executables will be installed. It is also worth mentioning that upon reboot, `/tmp` is cleared so make sure you have a backup of whatever you put there.
-
+{:start="3"}
 3. `ssh` into the device and un-tar the file
 
   ```bash
@@ -27,7 +27,7 @@ sudo scp <location_of_opkg> root@<kankun_ip_address>:/tmp/
   ```bash
   tar -xzf opkg-rc3.tar.gz && cd opkg-rc3
   ```
-  
+{:start="4"}
 4. Move the contents to the appropriate location
 
   ```bash
@@ -41,5 +41,5 @@ sudo scp <location_of_opkg> root@<kankun_ip_address>:/tmp/
   ```bash
   opkg update
   ```
-  
+{:start="5"}
 5. Happy installing! More info about opkg can be found on the [OpenWrt](https://wiki.openwrt.org/doc/techref/opkg) site.
