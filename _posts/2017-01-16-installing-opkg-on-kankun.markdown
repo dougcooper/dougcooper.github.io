@@ -11,8 +11,8 @@ After playing around a bit, I realized I needed a package manager to do some bas
 2. Copy the file over to the KanKun using the following command, while entering the necessary passwords
 
   ```bash
-  sudo scp <location_of_opkg> root@<kankun_ip_address>:/tmp/
-  ```
+sudo scp <location_of_opkg> root@<kankun_ip_address>:/tmp/
+```
   
   Note 1: `scp` was used since `rsync` is unavailable on the target system.
 
