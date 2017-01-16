@@ -9,7 +9,7 @@
 title: Doug Cooper
 email: douglas.cooper1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple website for jotting down progress in various home projects.
+  A simple website for jotting down progress with various home electronics and software projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dougcooper.github.io" # the base hostname & protocol for your site
 twitter_username: "@dCo0p"
