@@ -28,7 +28,9 @@
           
           {% if site.linkedin_username %}
           <li>
-            {% include icon-linkedin.html username=site.linkedin_username %}
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fa fa-linkedin"></i>
+            </a>
           </li>
           {% endif %}
         </ul>
