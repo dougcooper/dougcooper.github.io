@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing `opkg` on KanKun"
+title:  "Installing opkg on KanKun"
 date:   2017-01-16
 categories: jekyll update
 ---
