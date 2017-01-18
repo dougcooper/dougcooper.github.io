@@ -20,26 +20,26 @@ After playing around a bit, I realized I needed a package manager to do some bas
 
 3. `ssh` into the device and un-tar the file
 
-    ```bash
-    cd /tmp
-    ```
+   ```bash
+   cd /tmp
+   ```
   
-    ```bash
-    tar -xzf opkg-rc3.tar.gz && cd opkg-rc3
-    ```
+   ```bash
+   tar -xzf opkg-rc3.tar.gz && cd opkg-rc3
+   ```
   
 4. Move the contents to the appropriate location
 
-    ```bash
-    mv bin/opkg-rc3 /bin
-    ```
+   ```bash
+   mv bin/opkg-rc3 /bin
+   ```
   
-    ```bash
-    mv etc/opkg.conf /etc
-    ```
+   ```bash
+   mv etc/opkg.conf /etc
+   ```
   
-    ```bash
-    opkg update
-    ```
+   ```bash
+   opkg update
+   ```
 
 5. Happy installing! More info about opkg can be found on the [OpenWrt](https://wiki.openwrt.org/doc/techref/opkg) site.
