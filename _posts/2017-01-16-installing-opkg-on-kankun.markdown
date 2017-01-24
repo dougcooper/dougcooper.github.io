@@ -2,7 +2,8 @@
 layout: post
 title:  "Installing opkg on KanKun"
 date:   2017-01-16
-categories: kankun
+category: kankun
+tags: [linux]
 comments: true
 ---
 
