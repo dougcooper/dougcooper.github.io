@@ -3,13 +3,17 @@ layout: post
 title:  "Setting up Avahi-Daemon on KanKun"
 date:   2017-01-23
 comments: true
-categories: kankun
-tags: [linux, avahi]
+category: kankun
+tags: [linux]
 ---
 
-Managing devices on a network can be quite cumbersome, especially in an age when IoT is gaining immense popularity. One may want to do something as simple as ping a device, or something more complex like navigate to a hosted web server. With that said remembering statically mapped devices by ip is not an elegant solution, nor is hosting a dns server.
+Managing devices on a network can be quite cumbersome, especially in an age when IoT is gaining immense popularity. One may want to do something as simple as ping a device, or something more complex like navigate to a hosted web server. With that said remembering statically mapped devices by IP can be daunting, while  hosting a dedicated DNS/DHCP server impractical. One alternative solution called [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) allows for host name resolution via multicast. The best part is that both Windows (via Apple Bonjour) and Linux (via Avahi) easily support it. This allows us to do things like
 
-Apple developed a really awesome solution called Avahi (aka [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS)) that allows for host name resolution via multicast. The best part is that both Windows and Linux devices easily support it.
+```
+ping yourdevice.local
+ssh username@yourdevice.local
+yourdevice.local/index.html
+```
 
 For this post I was interested in getting Avahi running on a kankun wifi outlet which had a few caveats to get right. Credit goes to this [OpenWrt ](https://forum.openwrt.org/viewtopic.php?id=56615) post with minor modification for the kankun.
 
