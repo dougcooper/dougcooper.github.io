@@ -47,7 +47,7 @@ Start and enable the service.
 /etc/init.d/avahi-daemon enable
 ```
 
-At this point it is probably desirable to change the name of the device, especially if there are multiple of the same type on the network. There are [many ways]() to do this on Linux, but I found the following to work best for this device.
+At this point it is probably desirable to change the name of the device, especially if there are multiple of the same type on the network. There are [many ways](http://www.ducea.com/2006/08/07/how-to-change-the-hostname-of-a-linux-system/) to do this on Linux, but I found the following to work best for this device.
 
 ```
 sysctl -w kernel.hostname=<your_new_device_name>
