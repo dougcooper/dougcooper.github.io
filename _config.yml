@@ -20,3 +20,6 @@ linkedin_username: douglascooper1
 markdown: kramdown
 
 theme: jekyll-theme-architect
+
+gems:
+  - jekyll-seo-tag
