@@ -47,14 +47,16 @@ Start and enable the service.
 /etc/init.d/avahi-daemon enable
 ```
 
-At this point it is probably desirable to change the name of the device, especially if there are multiple of the same type on the network. There are [many ways](http://www.ducea.com/2006/08/07/how-to-change-the-hostname-of-a-linux-system/) to do this on Linux, but I found the following to work best for this device.
+At this point it is probably desirable to change the name of the device, especially if there are multiple of the same type on the network. There are [many ways](http://www.ducea.com/2006/08/07/how-to-change-the-hostname-of-a-linux-system/) to do this on Linux, however OpenWrt uses a method called [UCI](https://wiki.openwrt.org/doc/uci) to manage some of the system configuration settings. Edit the following line in `/etc/config/system` to change the hostname:
 
 ```
-sysctl -w kernel.hostname=<your_new_device_name>
+config system
+        option hostname '<your_new_device_name>'
+        ...
 ```
 
-Last but not least, restart Avahi for the changes to take effect.
+Finally, restart the device for the changes to take effect.
 
 ```
-/etc/init.d/avahi-daemon restart
+reboot -f
 ```
